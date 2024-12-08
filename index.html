@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fontawesome.com/icons/x-twitter?f=brands&s=solid">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<audio autoplay loop>
+  <source src="intro.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<style>
+  /* Customize the background color and text color for highlighted text */
+  ::selection {
+    background-color: palevioletred; /* Change to your preferred color */
+  }
+</style>
+
+<body>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial;
+      padding: 10px;
+      background: #f1f1f1;
+    }
+    
+    /* Header/Blog Title */
+    .header {
+      padding: 6px;
+      text-align: center;
+      background-color:#FFFFF0;
+
+        text-align: center;
+        width: 100%;
+        margin-bottom: 3%;
+        color: #67595E;
+        border: 3px solid #67595E;
+        font-family: "Press Start 2P" , "consolas" , "sans-serif";
+    }
+
+  .video-container {
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 7px;
+ 
+  }
+    
+    .header h1 {
+      font-size: 50px;
+    }
+    
+    /* Style the top navigation bar */
+    .navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #EED6D3;
+
+  top: 0;
+  width: 100%;
+  border: 3px solid #67595E;
+  font-family: "Press Start 2P", "consolas", "sans-serif";
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+  background-color: #A49393;
+}
+
+.navbar .active {
+  background-color: #E8B4B8;
+}
+
+div.gallery1 {
+  border: 4px solid #67595E;
+  }
+                
+ div.gallery1:hover {
+  border: 5px solid #E8B4B8;
+  }
+                
+ div.gallery1 img {
+    width: 100%;
+    height: auto;
+  }
+                
+ div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color:#EED6D3;
+    font-family: "Press Start 2P" , "consolas" , "sans-serif";
+    font-size: 13px;
+ 
+  }
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 20%;
+ 
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }    
+   /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+    
+    /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-right: 20px;
+  }   
+    /* Add a card effect for articles */
+  .card {
+    background-color:	#FFFFF0;
+    padding: 20px;
+    margin-top: 20px;
+    border: 3px solid #67595E;
+  }
+  .card h1{
+    color: #67595E;
+    font-family: "Press Start 2P", "consolas", sans-serif;
+  }
+  .card h2{
+    color: #67595E;
+    font-family: "Press Start 2P", "consolas", sans-serif;
+  }
+  .card h3{
+    color: #67595E;
+    font-family: "consolas", sans-serif;
+  }
+  .card h4{
+    color: #67595E;
+    font-family: "Press Start 2P", "consolas", sans-serif;
+  }
+  .card img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .card img:hover {
+    transform: scale(1.1); /* Zoom in */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow */
+   }
+    /* Clear floats after the columns */
+    .row::after {
+     content: "";
+     display: table;
+     clear: both;
+    }
+    
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: 20px;
+    }
+    .hide {
+      display: none;
+      font-size: 18px;
+      margin-top: 10px;
+      padding: 15px;
+      background-color: #67595E; /* Light red background */
+      color: #333; /* Darker text */
+      border: 3px solid black; /* Red border */
+      border-radius: 8px; /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+      animation: fadeIn 0.5s ease-out; /* Smooth fade-in animation */
+    }
+    .myDIV:hover + .hide {
+      display: block;
+      color: white;
+    }
+    .myDIV {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color:#E8B4B8; /* Green background */
+      color: white; /* Change text color here */
+      font-size: 25px;
+      border-radius: 6px;
+      border: 2px solid #67595E;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+      font-family: "Press Start 2P", "consolas", sans-serif;
+    }
+    
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+    }
+    
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+    </style>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+
+  }
+
+  .email h1 {
+    color: #67595E;
+    font-family: "Press Start 2P", "consolas", sans-serif;
+  }
+
+  .email p {
+    font-size: 25px;
+    color: #555;
+    font-family: "consolas", sans-serif;
+  }
+
+  a.email-link {
+    text-decoration: none;
+    color: white;
+    background-color: #E8B4B8;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-family: "Press Start 2P", "consolas", sans-serif;
+    border-radius: 8px;
+    border: 2px solid #67595E;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+  }
+
+  a.email-link:hover {
+    background-color: #A49393;
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  a.email-link:active {
+    transform: scale(1.05);
+  }
+</style>
+
+    </head>
+    <body>
+      <ul class="navbar">
+        <li><a class="active" href="#homepage"><i class="fa fa-fw fa-home"></i> <ins>HOME</ins></a></li>
+        <li><a href="biodata.html"><i class="fa fa-fw fa-paw"></i> <ins>BIODATA</ins></a></li>
+        <li><a href="family.html"><i class="fa fa-fw fa-users"></i> <ins>FAMILY</ins></a></li>
+        <li><a href="education.html"><i class="fa fa-fw fa-graduation-cap"></i> <ins>EDUCATION</ins></a></li>
+        <li><a href="experience.html"><i class="fa fa-fw fa-check-circle"></i> <ins>EXPERIENCE</ins></a></li>
+        <li><a href="gallery.html"><i class="fa fa-fw fa-image"></i> <ins>GALLERY</ins></a></li>
+      </ul>
+
+    <div class="header">
+
+    <p style="font-size: 35px;" >FARAH AQILAH'S WEBPAGE</p>
+    <p style="font-size: 20px;" >Get to know me!</p>
+    <div class="video-container">
+      <video width="640" height="360" autoplay loop>
+    <source src="videos/welcome.mp4" type="video/mp4" width="500" height="900" alt="farahcomel" style="border-radius: 25px;">
+    </video>
+  </div></div></div>
+    
+    <div class="row">
+      <div class="rightcolumn">
+        <div class="card">
+          <h4>WHAT'S <ins>INTERESTING?</ins></h4>
+          <h3>Want to know deeper about me?</h3>
+          <img src="images/farahtopi.png" alt="farah topi" style="width:100%; height:250px; object-fit:cover;">
+          <h3>Curious about my family?</h3>
+          <img src="images/familycurious2.png" alt="familycurious" style="width:100%; height:250px; object-fit:cover;">
+          <h3>Am I a good student?</h3>
+          <img src="images/goodstudent2.png" alt="goodstudent" style="width:100%; height:250px; object-fit:cover;">
+        </div>
+      </div>
+      <div class="leftcolumn">
+        <div class="card">
+          <h1><ins>CONTENTS</ins></h1>
+          <div class="responsive">
+    <div class="gallery1">
+      <a target="_blank" href="biodata.html">
+        <img src="images/biodata.png" alt="biodata" width="600" height="400">
+      <div class="desc"><a target="_blank" href="biodata.html"><ins style="color:#674d3c">BIODATA</ins></a></div>
+    </div>
+  </div>
+
+<div class="responsive">
+    <div class="gallery1">
+      <a target="_blank" href="family.html">
+        <img src="images/family2.png" alt="family" width="600" height="400">
+      <div class="desc"><a target="_blank" href="family.html"><ins style="color:#674d3c">FAMILY</ins></a></div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery1">
+      <a target="_blank" href="education.html">
+        <img src="images/education.png" alt="education" width="600" height="400"> 
+      <div class="desc"><a target="_blank" href="education.html"><ins style="color:#674d3c">EDUCATION</ins></a></div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery1">
+      <a target="_blank" href="experience.html">
+        <img src="images/experience.png" alt="experience" width="600" height="400"> 
+      <div class="desc"><a target="_blank" href="experience.html"><ins style="color:#674d3c">EXPERIENCE</ins></a></div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery1">
+      <a target="_blank" href="gallery.html">
+        <img src="images/gallery.png" alt="gallery" width="600" height="400"> 
+      <div class="desc"><a target="_blank" href="gallery.html"><ins style="color:#674d3c">GALLERY</ins></a></div>
+    </div>
+  </div>
+  <div class="clearfix"></div> 
+        </div>
+        
+        <style>
+          .container {
+            margin: 0 auto;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+    
+          }
+        
+          .container img {
+            width: 100px; /* Set a fixed width */
+            height: 150px; /* Set a fixed height */
+            object-fit: cover; /* Maintain aspect ratio and prevent distortion */
+            border-radius: 10px;
+            border: 3px solid #E8B4B8;;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+          }
+        
+          .container img:hover {
+            transform: scale(1.7); /* Slight zoom effect */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+          }
+        </style>
+
+        <div class="card">
+          <h1>GLIMPSE OF MY WEBPAGE!</h1>
+        <div class="container">
+          <img src="images/teaser1.jpg">
+          <img src="images/teaser2.jpg">
+          <img src="images/teaser3.jpg">
+          <img src="images/teaser4.jpg">
+          <img src="images/teaser5.jpg">
+        </div>
+    </div>
+        <div class="card">
+          <div class="email">
+          <h1>CONTACT ME!<i class='fa fa-fw fa-envelope' style='font-size:48px;'></i></h1>
+          <p>Click the button below to send me an email!</p>
+          <a class="email-link" href="mailto:aqilah201204@gmail.com">Send Email</a>
+          </div>
+          </div>
+        <div class="card">
+          <h1>REMINDER<i class='fa fa-fw fa-heart' style='font-size:48px;'></i></h1>
+          <div class="myDIV">Hover over me</div>
+          <div class="hide">Lighten up, just enjoy life, smile more, laugh more, and don’t get so worked up about things</div>
+        </div>
+</div></div>
+<br>
+
+   <style>
+    /* Basic footer styling */
+    footer {
+      background-color: #67595E; /* Dark background */
+      color: white;          /* White text */
+      text-align: center;    /* Centered text */
+      padding: 10px 0;       /* Vertical padding */
+      bottom: 0;             /* Align to the bottom */
+      width: 100%;           /* Full width */
+    }
+  </style>
+    <footer>
+      <p>&copy; 2024 FARAH AQILAH'S WEBPAGE. ALL RIGHTS RESERVED.</p>
+    </footer>
+    
+</body>
+</html>
+

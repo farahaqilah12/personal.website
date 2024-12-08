@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO MY WEBPAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    
+    
+    <style>
+        /* Ensure full height for body and html */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            flex-direction: column; /* Stack buttons vertically */
+        }
+
+        .buttonload {
+            background-color: #E8B4B8; /* Green background */
+            border: 4px solid #67595E; /* Remove borders */
+            color: white; /* White text */
+            padding: 12px 24px; /* Some padding */
+            font-size: 20px; /* Set a font-size */
+            cursor: pointer; /* Pointer cursor on hover */
+            display: block; /* Ensure buttons are block elements */
+            margin-top: 10px; /* Add space between buttons */
+            width: 200px; /* Set a fixed width for buttons */
+            text-align: center; /* Center text inside button */
+            border-radius: 10px;
+            font-family: "consolas" , "sans-serif";
+            margin-top: 30px;
+            
+        }
+
+        .buttonload a {
+            text-decoration: none; /* Remove underline */
+            color: black; /* Ensure text color is white */
+            display: inline-block; /* Allows proper styling within button */
+            width: 100%; /* Ensures the link covers the entire button area */
+            height: 100%;
+        }
+
+        .buttonload:hover {
+            background-color: #EED6D3; /* Darker green on hover */
+        }
+
+        /* Add a right margin to each icon */
+        .fa {
+            margin-left: -12px;
+            margin-right: 8px;
+        }
+
+        /* Background with opacity */
+        body::before {
+            content: "";
+            position: fixed; /* Fixed position to cover the viewport */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('images/farahmerah.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.3; /* Adjust opacity as needed */
+            z-index: -1; /* Keep the background behind the content */
+        }
+    </style>
+</head>
+<body>
+
+
+    <button class="buttonload">
+        <a target="_blank" href="index.html">
+            <i class="fa fa-circle-o-notch fa-spin"></i>LET'S DIVE IN &#128072;
+        </a>
+    </button>
+
+</body>
+</html>

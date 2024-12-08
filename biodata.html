@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIODATA</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Elbasan&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+<body style="background-color:	#F5FFFA;" >
+
+  <audio autoplay loop>
+    <source src="iloveher.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <style>
+    /* Customize the background color and text color for highlighted text */
+    ::selection {
+      background-color: palevioletred; /* Change to your preferred color */
+    }
+  </style>
+
+  <style>
+      
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: visible;
+      background-color: #EED6D3;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      border: 3px solid #67595E;
+      font-family: "Press Start 2P" , "consolas" , "sans-serif";
+      z-index: 1;
+     
+    }
+    
+    li {
+      float: left;
+      position: relative; /* Add this */
+    }
+    
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #A49393;
+    }
+    
+    .active {
+      background-color: #E8B4B8;
+    }
+    
+    .sub-navbar {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100%; /* Position below the main navbar */
+    left: 0;
+    background-color: #E8B4B8;
+    border: 3px solid #67595E;
+    z-index: 2;
+    min-width: 150px;
+}
+
+.sub-navbar a {
+    display: block;
+    padding: 10px 12px;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+}
+
+.sub-navbar a:hover {
+    background-color: #c5d5c5;
+}
+
+/* Show sub-navbar on hover */
+li:hover .sub-navbar {
+    display: block;
+}
+
+    @media (max-width: 768px) {
+ul {
+  font-size: 12px; /* Reduce navbar font size */
+}
+}
+    @media (max-width: 480px) {
+ul li a {
+  padding: 10px 5px; /* Adjust navbar padding */
+  font-size: 10px; /* Smaller font */
+}
+}
+
+    </style>
+       <ul>
+        <li><a href="index.html"><i class="fa fa-fw fa-home"></i> <ins>HOME</ins></a></li>
+        <li>
+            <a class="active" href="#biodata"><i class="fa fa-fw fa-paw"></i> <ins>BIODATA<i class='fa fa-fw fa-angle-down'></i></ins></a>
+            <!-- Sub-navbar -->
+            <div class="sub-navbar">
+                <a href="#SKILLS">SKILLS</a>
+                <a href="#SOCIAL MEDIA">SOCIAL MEDIA</a>
+                <a href="#FUN FACTS">FUN FACTS</a>
+            </div>
+        </li>
+        <li><a href="family.html"><i class="fa fa-fw fa-users"></i> <ins>FAMILY</ins></a></li>
+        <li><a href="education.html"><i class="fa fa-fw fa-graduation-cap"></i> <ins>EDUCATION</ins></a></li>
+        <li><a href="experience.html"><i class="fa fa-fw fa-check-circle"></i> <ins>EXPERIENCE</ins></a></li>
+        <li><a href="gallery.html"><i class="fa fa-fw fa-image"></i> <ins>GALLERY</ins></a></li>
+    </ul>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  
+    body {
+      font-family: Arial;
+      padding: 10px;
+      background: #f1f1f1;
+    }
+  
+    /* Header/Blog Title */
+    .header {
+      padding: 6px;
+      text-align: center;
+      background-color: #FFFFF0;
+      width: 100%;
+      margin-bottom: 3%;
+      color: #67595E;
+      border: 3px solid #67595E;
+      font-family: "Press Start 2P", "consolas", "sans-serif";
+    }
+    </style>
+
+<style>
+  .infobiodata {
+    display: flex;
+    align-items: center; /* Centers the text vertically with the image */
+  
+  }
+  
+  .infobiodata img{
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+    margin-right: 20px; /* Adds space between the image and the text */
+
+    border: 6px outset #67595E;
+    
+   
+  }
+  
+  .infobiodata h3{
+  color: #67595E;
+  font-family: "Press Start 2P" , "consolas" , "sans-serif";
+
+  }
+
+  .text {
+    font-size: 20px;
+    font-family: "consolas" , "sans-serif";
+  }
+  .header2 {
+    padding: 6px;
+    background-color:#FFFFF0;
+    width: 100%;
+    margin-bottom: 3%;
+    color: #67595E;
+    border: 3px solid #67595E;
+    font-family:"consolas" , "sans-serif";
+  }
+
+  .header3 {
+    padding: 6px;
+    text-align: center;
+    background-color:#EED6D3;
+    margin-top: 5%;
+    color: #67595E;
+    border: 3px solid #67595E;
+    font-family: "Press Start 2P" , "consolas" , "sans-serif";
+    margin: 0;
+    font-size: 24px; /* Adjust this value as needed */
+  }
+  </style>
+
+<br><br><br>
+<div class="header3">
+<p>PERSONAL DETAILS <i class='fa fa-fw fa-star' style='font-size:45px;'></i></p>
+</div>
+<div class="header2">
+  <div class="infobiodata">
+      <img src="images/farah_pink.jpg" alt="Avatar" >
+      <div class="text">
+        <h3>FARAH AQILAH BINTI BADRUL HISHAM</h3>
+        <p><mark style="background-color: #EED6D3;">Birthdate:</mark> December 20, 2004</p>
+        <p><mark style="background-color: #EED6D3;">Nationality:</mark> Malaysian</p>
+        <p><mark style="background-color: #EED6D3;">Age:</mark> 20 year old</p>
+        <p><mark style="background-color: #EED6D3;">Height:</mark> 156cm</p>
+        <p><mark style="background-color: #EED6D3;">Blood type:</mark> O</p>
+      </div>
+    </div>
+</div></div></div>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  .skillsbiodata {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 2%;
+  }
+
+  .containerskills {
+    position: relative;
+    width: 100%; /* Ensures it fits within the grid column */
+    max-width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto; /* Center the containers */
+   
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 5px outset #67595E;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    font-size: 16px; /* Reduced font size for better readability */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .containerskills:hover .overlay {
+    opacity: 1;
+    border-radius: 10px;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #67595E;
+    font-family: "consolas", "sans-serif";
+  }
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .skillsbiodata {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+      gap: 10px; /* Smaller gap between items */
+    }
+
+    .description {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .skillsbiodata {
+      grid-template-columns: 1fr; /* Stack items vertically on phones */
+    }
+
+    .containerskills {
+      max-width: 100%; /* Allow full-width containers */
+      height: auto; /* Allow height to adjust */
+    }
+
+    .overlay {
+      font-size: 14px; /* Smaller overlay font for small screens */
+    }
+
+    .description {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  }
+</style>
+
+<div class="header3">
+<p id="SKILLS">SKILLS <i class='fa fa-fw fa-leaf' style='font-size:45px;'></i></p>
+</div>
+<div class="header2">
+<div class="skillsbiodata"> 
+<a href="images/microsoftoffice.png"> 
+  <div class="containerskills"> 
+      <img src="images/microsoftoffice.png" alt="Avatar 1" class="image"> 
+      <div class="overlay">
+          <p>Microsoft Word</p>
+          <p>Microsoft Excel</p>
+          <p>Microsoft PowerPoint</p>
+      </div> 
+  </div> 
+  <div class="description">Ofiice Software Skills</div> 
+</a> 
+
+
+<a href="images/designandmultimedia.png"> 
+  <div class="containerskills"> 
+      <img src="images/designandmultimedia.png" alt="Avatar 2" class="image"> 
+      <div class="overlay">
+        <p>Adobe Premiere Pro</p>
+        <p>CapCut</p>
+        <p>Canva</p>
+    </div> 
+</div> 
+<div class="description">Design and Multimedia Skills</div> 
+</a> 
+
+
+<a href="images/programming.png"> 
+  <div class="containerskills"> 
+      <img src="images/programming.png" alt="Avatar 2" class="image"> 
+      <div class="overlay">
+        <p>C++</p>
+        <p>SQL</p>
+        <p>HTML</p>
+        <p>CSS</p>
+    </div> 
+</div> 
+<div class="description">Programming and Web Development Skills</div> 
+</a> 
+
+
+<a href="images/language.png"> 
+  <div class="containerskills"> 
+      <img src="images/language.png" alt="Avatar 2" class="image"> 
+      <div class="overlay">
+        <p>Malay</p>
+        <p>English</p>
+        <p>Spanish</p>
+    </div> 
+</div> 
+<div class="description">Language Skills</div> 
+</a> 
+</div></div>
+
+<style>
+  /* General Reset */
+  * {
+      box-sizing: border-box;
+  }
+  
+  /* Social Media Button Container */
+  .containersocialmedia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    gap: 40px; /* Add space between icons */
+    padding: 2%; /* Optional padding for the container */
+}
+
+  
+.custom-icon {
+    padding: 20px;
+    font-size: 50px; /* Icon size */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%; /* Circular shape */
+    transition: 0.3s; /* Hover transition */
+    margin: 10px; /* Add gap around each icon */
+}
+
+.custom-icon:hover {
+    opacity: 0.7; /* Slight transparency on hover */
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+/* Specific Styling for Each Platform */
+.instagram-icon {
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+    color: white;
+}
+
+.linkedin-icon {
+    background: #0077B5;
+    color: white;
+}
+
+.youtube-icon {
+    background: #FF0000;
+    color: white;
+}
+
+  </style>
+  
+  <div class="header3">
+    <p id="SOCIAL MEDIA">SOCIAL MEDIA <i class='fa fa-fw fa-user-plus' style='font-size:40px;'></i></p>
+</div>
+
+<div class="header2">
+  <div class="containersocialmedia">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/farahaqilah12/" class="fa fa-instagram custom-icon instagram-icon" target="_blank"></a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/farah-aqilah-badrul-hisham-38bb0a292/" class="fa fa-linkedin custom-icon linkedin-icon" target="_blank"></a>
+
+      <!-- YouTube -->
+      <a href="https://www.youtube.com/channel/UCk82PJdvg8YEjXskuXdX-eA" class="fa fa-youtube custom-icon youtube-icon" target="_blank"></a>
+  </div>
+</div>
+
+
+<style>
+.funfacts{
+color: white;
+font-size: 25px;
+background-color:  #67595E;
+border-radius: 10px;
+font-family: "consolas" , "sans-serif";
+text-align: center;
+}
+</style>
+
+<style>
+.containerfavcolor {
+display: flex;
+background-color: #f1f1f1;
+justify-content: center;
+border: solid black;
+
+
+}
+
+.containerfavcolor:hover {
+border: 5px double green;
+}
+
+.containerfavcolor > div {
+background-color: DodgerBlue;
+color: white;
+width: 150px; 
+height: 200px; 
+margin: 40px;
+text-align: center;
+line-height: 150px; 
+font-size: 14px; 
+font-family: "consolas", sans-serif;
+}
+
+#box1{
+background-color: Green;
+}
+
+#box2{
+background-color: #006400;
+}
+
+#box3{
+background-color: #2E8B57;
+}
+
+#box4{
+background-color: #556B2F;
+}
+
+#box5{
+background-color:#6B8E23;
+}
+
+#box6{
+background-color:YellowGreen ;
+}
+
+@media only screen and (max-width: 768px) {
+.containerfavcolor{
+flex-direction: column; /* Stack items vertically */
+align-items: center; /* Center content horizontally */
+}
+}
+
+@media only screen and (max-width: 576px) {
+.containerfavcolor{
+flex-direction: column; /* Stack items vertically */
+align-items: center; /* Center content horizontally */
+}
+}
+
+@media only screen and (max-width: 950px) {
+.containerfavcolor{
+flex-direction: column; /* Stack items vertically */
+align-items: center; /* Center content horizontally */
+}
+}
+
+</style>
+
+<div class="header3">
+ <p id="FUN FACTS">FUN FACTS <i class='fa fa-fw fa-twitch' style='font-size:40px;'></i></p>
+ </div>
+ 
+ <div class="funfacts">
+  <p><b>1. My favorite color is green</b></p>
+  </div>
+<div class="header2">
+<div class="containerfavcolor">
+<div id="box1">Green</div>
+<div id="box2">DarkGreen</div>
+<div id="box3">SeaGreen </div> 
+<div id="box4">DarkOliveGreen</div>
+<div id="box5">OliveDrab </div>
+<div id="box6">YellowGreen</div> 
+</div>
+</div>
+
+<style>
+.videokucing{
+text-align: center;
+border-radius: 15px;
+padding: 4px;
+
+
+}
+
+@media screen and (max-width: 768px) {
+.videokucing video {
+  width: 100%; /* Make the video fit the screen width */
+  height: auto; /* Maintain aspect ratio */
+}
+}
+
+@media screen and (max-width: 576px) {
+.videokucing video {
+  width: 100%; /* Make the video fit the screen width */
+  height: auto; /* Maintain aspect ratio */
+}
+}
+
+</style>
+
+<div class="funfacts">
+<p><b>2. My favorite animal is cat  &#128008;  &#128008;  &#128008;</b></p>
+</div>
+<div class="header2">
+<div class="videokucing">
+<video width="640" height="360" controls>
+<source src="videos/videokucing.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p style="font-family: consolas, sans-serif; font-size: 25px;" >His name is Kelabu</p>
+</div>
+</div>
+<style>
+
+ * {
+  box-sizing: border-box;
+
+  }
+
+  .columnlagu {
+    width: 20%;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+}
+
+ .rowlagu::after {
+  content: "";
+  display: table;
+  clear: both;
+
+  }
+
+  .rowlagu {
+    display: flex;            /* Use Flexbox */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    flex-wrap: wrap;          /* Allow wrapping of columns */
+    gap: 20px;                /* Optional: Add spacing between columns */
+}
+
+.columnlagu img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #000; 
+  border-radius: 5px; 
+  transition: border-color 1s;
+}
+
+.columnlagu:hover img {
+  border: 5px solid #67595E;
+
+}
+
+ div.desclagu {
+  padding: 10px;
+  text-align: center;
+  background-color:#EED6D3;
+  font-family: "Press Start 2P" , "consolas" , "sans-serif";
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 3px solid #67595E;
+
+}
+
+ div.desclagu:hover {
+
+  border: 4px dashed;
+}
+
+@media screen and (max-width: 768px) {
+.columnlagu {
+  width: 50%; /* Reduce to 2 columns on tablets */
+}
+}
+
+@media screen and (max-width: 576px) {
+.columnlagu {
+  width: 100%; /* Stack columns vertically on phones */
+}
+
+.desclagu {
+  font-size: 14px; /* Adjust font size for smaller screens */
+  padding: 8px;
+}
+} 
+</style>
+
+<div class="funfacts">
+<p><b>3. My favorite songs:</b></p>
+</div>
+
+<div class="header2">
+<div class="rowlagu"> 
+<div class="columnlagu">
+<a target="_blank" href="https://youtu.be/Pw-0pbY9JeU?si=yRNGuzhSWcSclmRN">
+<img src="images/top.jpg" width="100%" height="300px">
+</a>
+<div id="hijau" class="desclagu" style="color: #FA8072;">TOP - Ride</div>
+</div>
+
+<div class="columnlagu">
+  <a target="_blank" href="https://youtu.be/lTEzy5WnoYk?si=mivMT1AuCKqZr3ye">
+  <img src="images/5sos.webp" width="100%;" height="300px">
+  </a>
+  <div class="desclagu" style="color:#20B2AA">5SOS - Thin White Lies</div>
+</div>
+
+
+  <div class="columnlagu">
+    <a target="_blank" href="https://youtu.be/j_MlBCb9-m8?si=_k_R46ODnDTcZMOU">
+    <img src="images/mcr.jpg" width="100%;" height="300px">
+    </a>
+    <div class="desclagu">MCR - Disenchanted</div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
